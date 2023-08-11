@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushant Mahadik Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+</style>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!--<img src="images/back1.jpg">-->
+            
+            
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#WorkExperience">Professional Experience</a></li>
+               <!-- <li><a href="#Certification">Certification</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+       
+        <div class="row">
+            
+                <div class="about-col-1">
+                    <br><br><br>
+                    <img src="images/Sushant.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <br>
+                    <h1 class="sub-title" font> <span style=color:#ff004f ;>Sushant </span>Mahadik</h1>
+                    <br><br>
+                    <p style="padding-right:6%; text-align: justify;">I am Sushant Mahadik, a T-shaped professional with deep expertise in Business & Product Analysis and a broad range of skills in Data Analytics. I have more than 3 years of industry experience, with a proven track record of delivering successful projects and driving data-driven insights for clients. I am passionate about transforming ideas into products and data into insights. Explore my portfolio and let's connect to discuss how I can contribute to your business value!</p> <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('certificate')">Certifications</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Project Management Tools</span><br> JIRA, Asana, Confluence, Visio, Microsoft PowerPoint, ServiceNow, Microsoft Project</li>
+                                <li><span>Software Platforms</span><br> Salesforce CRM, SAP ERP, Microsoft Dynamics CRM, EPIC, MS SharePoint, MS Office, G Suite</li>
+                                <li><span>Analytics</span><br>SQL, Python, R, Tableau, Microsoft PowerBI, Google Analytics, SAS, Microsoft Excel</li>
+                                <li><span>Database and ETL</span><br>SQL Server, MySQL, EPIC, Relational Databases, MS SSIS, Airflow</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2017 - 2020</span><br>Accenture Services Pvt. Ltd. <br> Business Analyst / Data Analytics Engineer </li>
+                                <li><span>2016 - 2017</span><br>rDNA Corp. <br> Business Development Intern</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023</span><br>Master of Science, Engineering Management <br> Northeastern University, Boston, USA</li>
+                                <li><span>2017</span><br>Bachelor of Engineering, Electronics and Telecommunications <br> University of Mumbai, India</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="certificate">
+                            <ul>
+                                <li> Certified Scrum Master (CSM)<br> 
+                                <li>Certified Scrum Product Owner (CSPO)<br> 
+                                <li>Apache Airflow Fundamentals<br> 
+                                <li>Azure AZ-900</li>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+        </div>
+    
+</div>
+<!-- -----------about---------- -->
+<!--<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Sushant.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <br><br>
+                <p>I'm Sushant Mahadik, a passionate and versatile data professional with a strong background in software development and data analytics. With a Bachelor's degree in Electronics and Telecommunications and a Master's degree in Engineering Management, I bring a unique blend of technical expertise and business acumen to the table. My journey in the industry has equipped me with a diverse skill set, including proficiency in Python, SQL, R, Tableau, and PowerBI. I have a proven track record of leading teams and delivering successful projects, optimizing data processes, and generating valuable insights through data visualization and analysis. 
+                    
+                <p>As a certified scrum master, I thrive in dynamic and collaborative environments, driving innovation and fostering effective communication across teams. I am passionate about leveraging data-driven strategies to solve complex business challenges and make a meaningful impact. Explore my portfolio to see examples of my work and let's connect to discuss how I can contribute to your data-driven initiatives.<br>
+        </div>
+    </div>
+</div>-->
+<!-- ----------portfolio------------ -->
+<br><br><br><br><br><br><br><br><br><br>
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Coffee2.jpg">
+                <div class="layer">
+                    <h3>Worldwide Coffee Market Analysis </h3><!--<h3>(Oct 2022 – Dec 2022)</h3>-->
+                    <p> The project explores, analyzes and visualizes the production, consumption, import, export and revenue from coffee around the world.</p>
+                    <br>
+                    <h4 style="font-size: medium;">Skills: R, Dplyr, Tidyr, Tableau, Excel,</h4>
+                    <!--<br>
+                    <p>Performed analysis of Coffee market around the world by collecting data using web scrapping, performing data transformation using R and developing dashboards using Tableau. Bagged the best project award</p>
+                    -->
+                    <a href="https://public.tableau.com/app/profile/sushant.mahadik/viz/Coffee_16845357187480/Story1" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/airbnb.jpg">
+                <div class="layer">
+                    <h3>Airbnb Listing Price Prediction</h3><!--<h3>Jan 2022 - Mar 2022</h3>-->
+                    <p>The purpose of the project is to accurately determine the price of the Airbnb listing in major US cities.</p><br>
+                    <h4 style="font-size: medium;">Skills: Python, Pandas, Seaborn, Scikit-learn, Linear Regression, XGBoost, Data Cleaning, Dimension Reduction, PCA.</h4>
+                    <br>
+                    <!--
+                    <p>Developed a prediction model to estimate the prices of the AirBnB listings of major cities of United States using linear regression, univariate and multivariate analysis, XGBoost and achieved a r2 score of 89%.</p>
+                    -->
+                    <a href="https://github.com/SushantM79/Airbnb-Price-Prediction/blob/main/Airbnb%20Price%20Prediction.ipynb" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Traffic5.jpg">
+                <div class="layer">
+                    <h3>US Traffic Accidents Analysis</h3><!--<h3>Nov 2021 - Dec 2021</h3>-->
+                    <p>In depth analysis of traffic accidents in the United States considering various factors such as location, time, climate, visibility and various other fcators.</p><br>
+                    <h4 style="font-size: medium;">Skills: Python, Logistic Regression, Decision Tree, Random Forest, Data Cleaning</h4>
+                    <br>
+                    <!--<p>Built a prediction model to anticipate the occurrence of an accident using logistic regression, Decision Tree and Random Forest by cleaning and feature engineering a large dataset and achieved a F-1 score of 0.92</p>
+                    --><a href="https://github.com/SushantM79/US-Traffic-Accident-Analysis/blob/main/US_Traffic_Accidents.R" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <h1>
+            <button class="btn"  onclick="myFunction()" id="seeMore"  >Show More</button>
+        </h1>
+    </div>
+</div>
+<br><br>
+<div id="myDIV">
+    <div class="container">
+        <div class="work-list">       
+                <div class="work">
+                    <img src="images/Happiness3.jpeg">
+                    <div class="layer">
+                        <h3>Happiness: A Socio-Economic Phenomenon</h3><!--<h3>Nov 2021 - Dec 2021</h3>-->
+                        <p>The project explores, analyzes and visualizes the factors affecting the happiness index of countries around the world.</p><br>
+                        <h4 style="font-size: medium;">Skills: Python, Logistic Regression, Decision Tree, Random Forest, Data Cleaning</h4>
+                        <br>
+                        <!--<p>Built a prediction model to anticipate the occurrence of an accident using logistic regression, Decision Tree and Random Forest by cleaning and feature engineering a large dataset and achieved a F-1 score of 0.92</p>
+                        --><a href="https://sites.google.com/view/project1group1/introduction" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/gun12.jpg">
+                    <div class="layer">
+                        <h3>US-Gun-Violence</h3><!--<h3>Nov 2021 - Dec 2021</h3>-->
+                        <p>The project explores, analyzes and visualizes the incidences of gun violence in United States.</p>
+                        <br>
+                        <h4 style="font-size: medium;">Skills: Python, Logistic Regression, Decision Tree, Random Forest, Data Cleaning</h4>
+                        <!--<br>
+                        <p>Built a prediction model to anticipate the occurrence of an accident using logistic regression, Decision Tree and Random Forest by cleaning and feature engineering a large dataset and achieved a F-1 score of 0.92</p>
+                        -->
+                        <a href="https://github.com/SushantM79/US-Gun-Violence/blob/main/US%20Gun%20Violence.Rmd" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/airline1.jpg">
+                    <div class="layer">
+                        <h3>Airline-Reservation-System</h3><!--<h3>Nov 2021 - Dec 2021</h3>-->
+                        
+                        <p>The purpose of the database is to maintain the data used to make airline reservation and check for seat occupancy.</p><br>
+                        <h4 style="font-size: medium;">Skills: Python, Logistic Regression, Decision Tree, Random Forest, Data Cleaning</h4>
+                        <br>
+                        <!--
+                        <p>Built a prediction model to anticipate the occurrence of an accident using logistic regression, Decision Tree and Random Forest by cleaning and feature engineering a large dataset and achieved a F-1 score of 0.92</p>
+                        -->
+                        <a href="https://github.com/SushantM79/Airline-Reservation-System" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------WorkExperience---------- -->
+<br><br>
+<div id="WorkExperience">
+    <div class="container">
+        <h1 class="sub-title">Professional Experience</h1>
+        <br>
+        
+           <h1 style="font-size: xx-large;"><span style=color:#ff004f ;>Accenture Services Pvt. Ltd.  </span></h1>
+           <h1 style="font-size: x-large;">  Data Analytics Engineer </h1><br>
+                <ul>
+                <li> Streamlined data migration and data warehousing process for GRP application by implementing ELT pipeline using Apache Airflow and Snowflake, increasing storage capacity by 3x, and reducing costs by 30% </li>
+                <li> Reduced manual intervention by 80% by creating a data aggregation pipeline in Airflow to combine data from Redshift, BigQuery. </li>
+                <li> Collaborated with DE team to migrate terabyte-scale finance data from Amazon Redshift to Snowflake reducing infra cost by 30%.</li>
+                <li> Authored complex SQL queries to perform data exploration and data validation over 1 million transactional records using constructs such as joins, window functions, materialized views, and CTEs.</li>
+                <li> Performed data profiling and data modeling on financial data using dbt to compute infra costs and developed metrics using Looker which reduced the operational cost by approximately 150k dollars</li>
+                <li> Assisted in the implementation of a customer loyalty program, analyzing customer data to identify high-value customers, and developing personalized offers to increase customer loyalty and retention</li>
+                <li> Analyzed pain points, identified areas of improvement, and implemented A/B testing, increasing marketing effectiveness by 25%.</li>
+                <li> Curated dashboards using Tableau to visualize KPIs such as lead generation, conversion rates, revenue attribution, and user journeys for non-technical stakeholders, facilitating data-driven decision-making.</li>    
+            </ul>
+            <br>
+            <h1 style="font-size: xx-large;"><span style=color:#ff004f ;>rDNA Corp. </span> </h1>
+            <h1 style="font-size: x-large;"> Data Analytics Intern  </h1><br>
+                <ul>
+                <li> Performed extraction, manipulation, and summarization of data from multiple sources such as SPSS, and Excel sheets using SQL.</li>
+                <li> Conducted pricing analysis to optimize pricing strategies, increasing profitability by 8% without compromising competitiveness. </li>
+                <li> Created interactive dashboards using MS PowerBI, to display days sales of inventory (DSI) KPI, improving sales efficiency by 40%.</li>
+                </ul>
+                 
+        
+    </div>
+</div>
+
+<!-- -----------Certification---------- -->
+<!--<div id="Certification">
+    <div class="container">
+        <h1 class="sub-title">Certificate</h1>
+        <div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Certifications</span><br> Google Data Analytics Professional Certificate <p> Microsoft Azure AZ-900</li>
+                </ul>
+            </div>
+        </div>
+    </div>     
+</div>-->
+
+<!-- ----------contact------------- -->
+<br><br><br><br>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>mahadik.su@northeastern.edu</p>
+                <br>
+                <p><i class="fas fa-phone-square-alt"></i>+1 (857) 544-8790</p>
+                <br>
+                <p><a href="https://www.linkedin.com/in/sushantmahadik/" target="_blank" style=" color: white;"><i class="fab fa-linkedin"></i> Sushant Mahadik</a>
+                </p>
+                <a href="images/Sushant Mahadik.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                 <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display == "block") { // `=` to `==` or `===`
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+        var x = document.getElementById("seeMore");
+        console.log('inside ',x.innerHTML);
+        if (x.innerHTML=="Show More")
+        {
+            x.innerHTML = "Show Less";
+        }
+        else if(x.innerHTML=="Show Less"){
+            x.innerHTML = "Show More";
+        }
+      }
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.left = "0";
+    }
+    function closemenu(){
+        sidemeu.style.left = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxCRE3h-mfxF4XYzTJp2ZA2uvVZ80THmK4boMGkjDMr5a_Q_lq1UQyHEiGOtuhZYnnX1Q/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
